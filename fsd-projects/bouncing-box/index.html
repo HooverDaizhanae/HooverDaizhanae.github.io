@@ -105,11 +105,11 @@
        */
       function handleBoxClick() {
         points += 1;
-        velocityX += 1;
+        var speed = 3 * points + 10;
+        velocityX = speed;
         positionX = 0;
         changeBoxText(points);
         moveBoxTo(positionX);
-       var speed = 3 * points + 10
       }
 
 
