@@ -27,22 +27,10 @@ var init = function (window) {
       circles.push(circle);
     }
     // TODO 3 : Call the drawCircle() function
-    for (var i = 0; i < 5; i++) {
+    for (var i = 0; i < 50; i++) {
       drawCircle();
     }
 
-    //TODO 4//
-
-
-    //TODO 5//
-
-    // TODO 6//
-
-    // TODO 7//
-
-    //TODO 8//
-
-    //TODO 9 /// 
 
     ///////////////////
     // PROGRAM LOGIC //
