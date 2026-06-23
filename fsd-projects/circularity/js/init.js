@@ -45,12 +45,7 @@ var init = function (window) {
       // TODO 4 : Update the position of each circle using physikz.updatePosition()
       // TODO 5 : Call game.checkCirclePosition() on your circles
       // TODO 6 : Loop from all sides
-      if (circle.x + circle.radius < 0) {
-          circle.x = canvas.width + circle.radius;
-      if (circle.y + circle.radius < 0) {
-          circle.y = canvas.height + circle.radius;
-      if (circle.y - circle.radius > canvas.height) {
-         circle.y = -circle.radius;
+
       // TODO 8 / TODO 9 : Iterate over the array
       for (var i = 0; i < circles.length; i++) {
         circle = circles[i];
@@ -72,7 +67,7 @@ var init = function (window) {
 
       // if the circle has gone past the LEFT side of the screen then place it on the RIGHT
       if (circle.x < -circle.radius) {
-        circle.x = canvas.width + circle.radius;
+        circle.x = canvas.width;
       }
 
       // if the circle has gone past the BOTTOM of the screen then place it on the TOP
@@ -82,7 +77,7 @@ var init = function (window) {
 
       // if the circle has gone past the TOP of the screen then place it on the BOTTOM
       if (circle.y < -circle.radius) {
-        circle.y = canvas.height + circle.radius;
+        circle.y = canvas.height;
       }
     };
 
