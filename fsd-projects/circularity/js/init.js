@@ -44,6 +44,13 @@ var init = function (window) {
     function update() {
       // TODO 4 : Update the position of each circle using physikz.updatePosition()
       // TODO 5 : Call game.checkCirclePosition() on your circles
+      // TODO 6 : Loop from all sides
+      if (circle.x + circle.radius < 0) {
+          circle.x = canvas.width + circle.radius;
+      if (circle.y + circle.radius < 0) {
+          circle.y = canvas.height + circle.radius;
+      if (circle.y - circle.radius > canvas.height) {
+         circle.y = -circle.radius;
       // TODO 8 / TODO 9 : Iterate over the array
       for (var i = 0; i < circles.length; i++) {
         circle = circles[i];
